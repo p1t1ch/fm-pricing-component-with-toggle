@@ -3,6 +3,8 @@ import Seo from '@/components/Seo'
 import Toggle from 'react-toggle'
 import PriceCard from '@/components/PriceCard'
 import PricingPlans from '@/components/PricingPlans'
+import { ReactComponent as BgBottom } from '@/icons/bg-bottom.svg'
+import { ReactComponent as BgTop } from '@/icons/bg-top.svg'
 import 'react-toggle/style.css'
 import '@/styles/toggle.css'
 
@@ -10,12 +12,14 @@ function IndexPage() {
   const [isMonthlyPricing, setIsMonthlyPricing] = useState(true)
 
   return (
-    <main className="max-h-screen px-6 py-16 grid place-items-center">
+    <main className="relative min-h-screen px-6 py-16 grid justify-items-center">
       <Seo title="Frontend Mentor: Pricing component with toggle" />
-      <section className="mb-16">
+      <BgBottom className="absolute left-0 bottom-0 -z-10" />
+      <BgTop className="absolute right-0 top-0 -z-10" />
+      <section className="mb-14">
         <h1 className="mb-10 text-heading text-center">Our Pricing</h1>
         <div className="grid grid-cols-toggle gap-6 items-center">
-          <label htmlFor="pricing-type" className="text-opacity-50">
+          <label htmlFor="pricing-type" className="text-neutral-blue-grayish text-opacity-50">
             Annualy
           </label>
           <div id="toggle-label" className="sr-only">
@@ -28,7 +32,7 @@ function IndexPage() {
             aria-labelledby="toggle-label"
             onChange={() => setIsMonthlyPricing(!isMonthlyPricing)}
           />
-          <label htmlFor="pricing-type" className="text-opacity-50">
+          <label htmlFor="pricing-type" className="text-neutral-blue-grayish text-opacity-50">
             Monthly
           </label>
         </div>

@@ -27,9 +27,9 @@ function PriceCard({
 }: PriceCardProps) {
   return (
     <article
-      className={`text-center shadow p-8 ${theme === 'best' ? 'gradient py-14 text-white' : 'bg-white'} ${
-        position === 'left' ? 'rounded-l-plan' : position === 'right' ? 'rounded-r-plan' : 'rounded-plan'
-      } ${className}`}
+      className={`text-center shadow p-8 rounded-plan ${
+        theme === 'best' ? 'gradient lg:py-14 text-white' : 'bg-white'
+      } ${position === 'left' ? 'lg:rounded-r-none' : position === 'right' ? 'lg:rounded-l-none' : ''} ${className}`}
       {...props}
     >
       <div className="text-lg mb-6">{name}</div>

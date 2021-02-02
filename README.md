@@ -12,3 +12,5 @@
 </p>
 
 For this challenge:
+
+1. Read about accessible two-labelled toggle

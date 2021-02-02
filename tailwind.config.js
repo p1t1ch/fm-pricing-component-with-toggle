@@ -8,8 +8,7 @@ module.exports = {
         'blue-grayish': '#6E728E',
         'blue-grayish-dark': '#4A4D60',
         blue: '#6D72DE',
-        'blue-light': '#D0D5F6',
-        'blue-lightest': '#F7F7FE',
+        'blue-light': '#F7F7FE',
       },
       gradient: {
         start: '#A2A7F0',
@@ -39,6 +38,9 @@ module.exports = {
       },
       gridTemplateColumns: {
         toggle: 'repeat(3, auto)',
+      },
+      zIndex: {
+        '-10': '-10',
       },
     },
   },
