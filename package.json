@@ -38,6 +38,7 @@
     "last 2 iOS major versions"
   ],
   "dependencies": {
+    "@fontsource/montserrat": "^4.1.0",
     "@svgr/webpack": "^5.5.0",
     "autoprefixer": "^10.2.1",
     "focus-visible": "^5.2.0",
@@ -58,6 +59,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-toggle": "^4.1.1",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
