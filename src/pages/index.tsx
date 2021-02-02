@@ -7,7 +7,7 @@ import 'react-toggle/style.css'
 import '@/styles/toggle.css'
 
 function IndexPage() {
-  const [isMonthlyPricing, setIsMonthlyPricing] = useState(false)
+  const [isMonthlyPricing, setIsMonthlyPricing] = useState(true)
 
   return (
     <main>
@@ -17,7 +17,7 @@ function IndexPage() {
         <div>
           <label htmlFor="pricing-type">Annualy</label>
           <div id="toggle-label" className="sr-only">
-            Enable monthly pricing
+            Choose monthly pricing
           </div>
           <Toggle
             checked={isMonthlyPricing}
@@ -35,7 +35,7 @@ function IndexPage() {
           <PriceCard
             name="Basic"
             price={19.99}
-            monthlyPrice={24.99}
+            annualyPrice={199.99}
             storageSize={500}
             usersCount={2}
             sendupSize={3}
@@ -44,7 +44,7 @@ function IndexPage() {
           <PriceCard
             name="Professional"
             price={24.99}
-            monthlyPrice={29.99}
+            annualyPrice={249.99}
             storageSize={1000}
             usersCount={5}
             sendupSize={10}
@@ -54,7 +54,7 @@ function IndexPage() {
           <PriceCard
             name="Basic"
             price={39.99}
-            monthlyPrice={44.99}
+            annualyPrice={399.99}
             storageSize={2000}
             usersCount={10}
             sendupSize={20}

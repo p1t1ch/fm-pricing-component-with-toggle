@@ -3,7 +3,7 @@ import React from 'react'
 interface PriceCardProps extends React.HTMLProps<HTMLDivElement> {
   name: string
   price: number
-  monthlyPrice: number
+  annualyPrice: number
   storageSize: number
   usersCount: number
   sendupSize: number
@@ -14,7 +14,7 @@ interface PriceCardProps extends React.HTMLProps<HTMLDivElement> {
 function PriceCard({
   name,
   price,
-  monthlyPrice,
+  annualyPrice,
   storageSize,
   usersCount,
   sendupSize,
@@ -31,7 +31,7 @@ function PriceCard({
       {...props}
     >
       <div>{name}</div>
-      <div>$ {isMonthlyPricing ? monthlyPrice : price}</div>
+      <div>$ {isMonthlyPricing ? price : annualyPrice}</div>
       <ul>
         <li>{storageSize >= 1000 ? `${storageSize / 1000} TB` : `${storageSize} GB`} Storage</li>
         <li>{usersCount} Users Allowed</li>
