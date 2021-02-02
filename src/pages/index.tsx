@@ -10,12 +10,14 @@ function IndexPage() {
   const [isMonthlyPricing, setIsMonthlyPricing] = useState(true)
 
   return (
-    <main>
+    <main className="max-h-screen px-6 py-16 grid place-items-center">
       <Seo title="Frontend Mentor: Pricing component with toggle" />
-      <section>
-        <h1>Our pricing</h1>
-        <div>
-          <label htmlFor="pricing-type">Annualy</label>
+      <section className="mb-16">
+        <h1 className="mb-10 text-heading text-center">Our Pricing</h1>
+        <div className="grid grid-cols-toggle gap-6 items-center">
+          <label htmlFor="pricing-type" className="text-opacity-50">
+            Annualy
+          </label>
           <div id="toggle-label" className="sr-only">
             Choose monthly pricing
           </div>
@@ -26,10 +28,12 @@ function IndexPage() {
             aria-labelledby="toggle-label"
             onChange={() => setIsMonthlyPricing(!isMonthlyPricing)}
           />
-          <label htmlFor="pricing-type">Monthly</label>
+          <label htmlFor="pricing-type" className="text-opacity-50">
+            Monthly
+          </label>
         </div>
       </section>
-      <section>
+      <section className="max-w-container w-full">
         <h2 className="sr-only">Pricing plans</h2>
         <PricingPlans>
           <PriceCard
@@ -39,6 +43,7 @@ function IndexPage() {
             storageSize={500}
             usersCount={2}
             sendupSize={3}
+            position="left"
             isMonthlyPricing={isMonthlyPricing}
           />
           <PriceCard
@@ -52,12 +57,13 @@ function IndexPage() {
             isMonthlyPricing={isMonthlyPricing}
           />
           <PriceCard
-            name="Basic"
+            name="Master"
             price={39.99}
             annualyPrice={399.99}
             storageSize={2000}
             usersCount={10}
             sendupSize={20}
+            position="right"
             isMonthlyPricing={isMonthlyPricing}
           />
         </PricingPlans>

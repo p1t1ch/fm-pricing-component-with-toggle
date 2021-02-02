@@ -6,7 +6,7 @@ interface PricingPlans extends React.HTMLProps<HTMLUListElement> {
 
 function PricingPlans({ children, className = '', ...props }: PricingPlans) {
   return (
-    <ul className={`${className}`} {...props}>
+    <ul className={`grid grid-cols-3 items-center ${className}`} {...props}>
       {React.Children.map(children, child => (
         <li>{child}</li>
       ))}

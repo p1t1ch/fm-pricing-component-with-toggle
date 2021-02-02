@@ -16,6 +16,7 @@ module.exports = {
         end: '#696EDD',
       },
       white: '#FFF',
+      transparent: 'transparent',
     },
     extend: {
       fontFamily: {
@@ -23,20 +24,30 @@ module.exports = {
       },
       fontSize: {
         body: ['.9375rem', 1.87],
+        dollar: ['2.5rem', 1.225],
+        button: ['.8125rem', 1.23],
+        heading: ['2rem', 1.22],
       },
       boxShadow: {
         DEFAULT: '0px 20px 40px rgba(212, 210, 244, 0.5)',
       },
+      borderRadius: {
+        plan: '.625rem',
+      },
+      maxWidth: {
+        container: '65.625rem',
+      },
+      gridTemplateColumns: {
+        toggle: 'repeat(3, auto)',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundImage: ['hover', 'focus-visible'],
+      textColor: ['focus-visible'],
+      backgroundColor: ['focus-visible'],
+      borderColor: ['focus-visible'],
     },
   },
 }
-
-// ### Primary
-
-// - Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
-
-// ### Neutral
-
-// - Very Light Grayish Blue: hsl(240, 78%, 98%)
-// - Light Grayish Blue: hsl(234, 14%, 74%)
-// - Grayish Blue: hsl(233, 13%, 49%)

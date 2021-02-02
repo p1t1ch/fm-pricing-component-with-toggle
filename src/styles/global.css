@@ -8,7 +8,12 @@
   }
 
   body {
-    @apply text-body text-neutral-blue-grayish bg-neutral-blue-lightest;
+    @apply font-bold text-body text-neutral-blue-grayish bg-neutral-blue-lightest;
+  }
+
+  input:focus,
+  a:focus {
+    @apply outline-none;
   }
 }
 
@@ -23,5 +28,9 @@
 
   .grid-area {
     grid-area: single;
+  }
+
+  .gradient {
+    @apply bg-gradient-to-br from-gradient-start to-gradient-end;
   }
 }
