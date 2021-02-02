@@ -12,7 +12,7 @@ function IndexPage() {
   const [isMonthlyPricing, setIsMonthlyPricing] = useState(true)
 
   return (
-    <main className="relative min-h-screen px-6 py-16 grid justify-items-center">
+    <main className="relative min-h-screen px-6 py-16 grid justify-items-center content-start">
       <Seo title="Frontend Mentor: Pricing component with toggle" />
       <BgBottom className="absolute left-0 bottom-0 -z-10" />
       <BgTop className="absolute right-0 top-0 -z-10" />

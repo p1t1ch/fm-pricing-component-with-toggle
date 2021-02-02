@@ -10,7 +10,7 @@
 
 .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track,
 .react-toggle:focus-within:not(.react-toggle--disabled) .react-toggle-track {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .react-toggle-thumb {
